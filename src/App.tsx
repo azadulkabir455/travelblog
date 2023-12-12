@@ -1,8 +1,8 @@
-import React from 'react';
+import Home from './pages/Home.web';
 
 function App() {
   return (
-    <h1>Page settings</h1>
+    <Home />
   );
 }
 
