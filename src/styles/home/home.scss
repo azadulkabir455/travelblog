@@ -1,0 +1,54 @@
+@import "../global.scss";
+
+.sliderContainer {
+    .sliderOverlay {
+        background: linear-gradient(transparent 15%, transparent 20%, rgba(30, 34, 40, 0.3) 55%, rgba(30, 34, 40, 0.7) 85%, rgba(30, 34, 40, 0.75));
+    }
+    .sliderContent {
+        span {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-size: 23px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .sliderInfo {
+            .iconContainer {
+                &:not(:last-child)::after {
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    opacity: .5;
+                    position: relative;
+                    left: 10px;
+                }
+            }
+        }
+    }
+    .slick-dots {
+        position: static;
+        padding-top: 25px;
+        .slick-active {
+            .slick-dot {
+                width: 10px;
+                height: 10px;
+                background-color: transparent;
+                border-radius: 25px;
+                border: 3px solid #aab0bc;
+            }
+        }
+        .slick-dot {
+            width: 10px;
+            height: 10px;
+            background-color: #aab0bc;
+            border-radius: 25px;
+            border: 3px solid transparent;
+        }
+    }
+}

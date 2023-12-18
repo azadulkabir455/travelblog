@@ -1,40 +1,59 @@
-import React, { Component } from 'react'
-import {createUserWithEmailAndPassword, onAuthStateChanged, signInWithPopup, signOut} from "firebase/auth"
-import { collection, getDocs, addDoc, deleteDoc, doc, updateDoc } from 'firebase/firestore'
-import { auth, googleAuthProvider, db, storage } from '../config/firebase'
-import { ref, uploadBytes } from 'firebase/storage'
+import React, { Component } from "react";
+// import {createUserWithEmailAndPassword, onAuthStateChanged, signInWithPopup, signOut} from "firebase/auth"
+// import { collection, getDocs, addDoc, deleteDoc, doc, updateDoc } from 'firebase/firestore'
+// import { auth, googleAuthProvider, db, storage } from '../config/firebase'
+// import { ref, uploadBytes } from 'firebase/storage'
 
-type StateType = {
-
-}
+type StateType = {};
 export type HomeCarouselType = {
-  dots: boolean,
-  infinite: boolean,
-  speed: number,
-  slidesToShow: number,
-  slidesToScroll: number
-}
+  dots: boolean;
+  customPaging: (i: number) => JSX.Element;
+  infinite: boolean;
+  speed: number;
+  slidesToShow: number;
+  slidesToScroll: number;
+  initialSlide: number;
+  className: string;
+  autoplay: boolean;
+  autoplaySpeed: number;
+  cssEase: string;
+  pauseOnHover: boolean;
+  responsive: {
+    breakpoint: number;
+    settings: {
+      slidesToShow: number;
+    };
+  }[];
+};
 export default class HomeController extends Component<{}, StateType> {
-  constructor(props:any) {
-    super(props)
-    this.state = {
-
-    }
+  constructor(props: any) {
+    super(props);
+    this.state = {};
   }
 
   settings = {
     dots: true,
+    customPaging: (i: number) => <div className="slick-dot"></div>,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 2,
-    slidesToScroll: 1
-  }
-
+    slidesToScroll: 1,
+    initialSlide: 0,
+    className: "sliderContainer",
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 }
-
-
-
-
 
 // studentDB = collection(db, "students")
 

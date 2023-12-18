@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600&display=swap');
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+}
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+.icon {
+    color:#fff;
+    width: 18px;
+    height: 18px;
+}
+
+@mixin primaryHeading {
+    font-size: 34px;
+    line-height: 43px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+@mixin secondaryHeading {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+@mixin blogPreHeading {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+@mixin blogHeading {
+    font-size: 27px;
+    line-height: 36px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+@mixin paragraph {
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 500;
+}
+@mixin metaFont {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
