@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import "./styles/app.scss"
+import "./styles/home.scss"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
