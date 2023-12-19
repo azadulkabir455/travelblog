@@ -20,7 +20,9 @@ export default class Card extends Component<CardPropertyType>{
               className="card-img-top d-block rounded-top-4"
               style={{ height: "280px" }}
             />
-            <div className="overlay w-100 position-absolute top-0 start-0 rounded-top-4 d-flex justify-content-center align-items-center bg-dark text-white text-capitalize fw-medium">{linkText}</div>
+            <div 
+            className="overlay w-100 position-absolute top-0 start-0 rounded-top-4 d-flex justify-content-center align-items-center bg-dark text-light text-capitalize fw-medium">
+            {linkText}</div>
             <a href={link} className="stretched-link"></a>
           </div>
           <div className="card-footer">

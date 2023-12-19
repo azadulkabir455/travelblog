@@ -16,20 +16,6 @@
             font-weight: 600;
             text-transform: capitalize;
         }
-        .sliderInfo {
-            .iconContainer {
-                &:not(:last-child)::after {
-                    content: "";
-                    width: 5px;
-                    height: 5px;
-                    border-radius: 10px;
-                    background-color: #fff;
-                    opacity: .5;
-                    position: relative;
-                    left: 10px;
-                }
-            }
-        }
     }
     .slick-dots {
         position: static;
@@ -54,9 +40,30 @@
 }
 
 .homeAboutContainer {
-    padding: 120px;
     .homeAboutTitle {
         @include primaryHeading;
-        width: 80%;
+    }
+}
+.sideBarAboutSection {
+    h3 {
+        @include secondaryHeading;
+    }
+    p {
+        @include paragraph;
+    }
+    .socialContainer {
+        .socialIcon {
+            width: 22px;
+            height: 22px;
+            transition: all .20s linear;
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+.sideBarPopularPost {
+    h3 {
+        @include secondaryHeading;
     }
 }
