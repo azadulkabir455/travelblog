@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Slider from "react-slick";
-import { Calendar, User, MessageCircle } from "react-feather";
 import { HomeCarouselType } from "../../controllers/HomeController";
+import BlogMeta from "../global/BlogMeta";
 
 type propType = {
   settings: HomeCarouselType;
@@ -11,7 +11,7 @@ export default class HomeCarousel extends Component<propType> {
   render() {
     return (
       <>
-        <div className="container-lg">
+        <div className="container-lg sectionPadding">
           <Slider {...this.props.settings}>
             <div>
               <div
@@ -30,20 +30,11 @@ export default class HomeCarousel extends Component<propType> {
                   </span>
                   <h3 className="text-light mb-3">The best moment in venice</h3>
                   <div className="sliderInfo">
-                    <div className="hstack gap-4">
-                      <div className="iconContainer date d-flex justify-content-center align-items-center text-white">
-                        <Calendar className="icon" />
-                        <p className="ps-2 m-0">8 August 2022</p>
-                      </div>
-                      <div className="iconContainer author d-flex justify-content-center align-items-center text-white">
-                        <User className="icon" />
-                        <p className="ps-2 m-0">By author</p>
-                      </div>
-                      <div className="iconContainer comment d-flex justify-content-center align-items-center text-white">
-                        <MessageCircle className="icon" />
-                        <p className="ps-2 m-0">3</p>
-                      </div>
-                    </div>
+                    <BlogMeta
+                      date="8 August 2022"
+                      author="By author"
+                      comment="3"
+                    />
                   </div>
                 </div>
                 <a href="/" className="stretched-link"></a>
@@ -66,20 +57,11 @@ export default class HomeCarousel extends Component<propType> {
                   </span>
                   <h3 className="text-light mb-3">The best moment in venice</h3>
                   <div className="sliderInfo">
-                    <div className="hstack gap-4">
-                      <div className="iconContainer date d-flex justify-content-center align-items-center text-white">
-                        <Calendar className="icon" />
-                        <p className="ps-2 m-0">8 August 2022</p>
-                      </div>
-                      <div className="iconContainer author d-flex justify-content-center align-items-center text-white">
-                        <User className="icon" />
-                        <p className="ps-2 m-0">By author</p>
-                      </div>
-                      <div className="iconContainer comment d-flex justify-content-center align-items-center text-white">
-                        <MessageCircle className="icon" />
-                        <p className="ps-2 m-0">3</p>
-                      </div>
-                    </div>
+                    <BlogMeta
+                      date="8 August 2022"
+                      author="By author"
+                      comment="3"
+                    />
                   </div>
                 </div>
                 <a href="/" className="stretched-link"></a>
@@ -102,20 +84,11 @@ export default class HomeCarousel extends Component<propType> {
                   </span>
                   <h3 className="text-light mb-3">The best moment in venice</h3>
                   <div className="sliderInfo">
-                    <div className="hstack gap-4">
-                      <div className="iconContainer date d-flex justify-content-center align-items-center text-white">
-                        <Calendar className="icon" />
-                        <p className="ps-2 m-0">8 August 2022</p>
-                      </div>
-                      <div className="iconContainer author d-flex justify-content-center align-items-center text-white">
-                        <User className="icon" />
-                        <p className="ps-2 m-0">By author</p>
-                      </div>
-                      <div className="iconContainer comment d-flex justify-content-center align-items-center text-white">
-                        <MessageCircle className="icon" />
-                        <p className="ps-2 m-0">3</p>
-                      </div>
-                    </div>
+                    <BlogMeta
+                      date="8 August 2022"
+                      author="By author"
+                      comment="3"
+                    />
                   </div>
                 </div>
                 <a href="/" className="stretched-link"></a>

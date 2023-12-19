@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600&display=swap');
 
+$primary: #d16b86;
+$secondary: #343f52;
 
 * {
     margin:0;
@@ -14,9 +16,29 @@ body {
     font-family: 'Urbanist', sans-serif;
 }
 .icon {
-    color:#fff;
     width: 18px;
     height: 18px;
+}
+.sectionPadding {
+    padding-bottom: 120px;
+    @media only screen and (max-width: 992px) {
+        padding-bottom: 60px 0;
+    }
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 40px 0;
+    }
+}
+.iconContainer {
+    &:not(:last-child)::after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 10px;
+        background-color: rgba(184, 186, 189, 0.5);
+        opacity: .5;
+        position: relative;
+        left: 10px;
+    }
 }
 
 @mixin primaryHeading {
@@ -50,9 +72,9 @@ body {
     line-height: 29px;
     font-weight: 500;
 }
-@mixin metaFont {
-    font-size: 15px;
-    line-height: 26px;
-    font-weight: 500;
+@mixin blogHeadingSecondary {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
     text-transform: capitalize;
 }

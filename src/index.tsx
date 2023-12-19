@@ -19,6 +19,7 @@ import "./styles/home/home.scss"
 
 // Global Component CSS
 import "./styles/global/card.scss"
+import "./styles/global/bloglist.scss"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

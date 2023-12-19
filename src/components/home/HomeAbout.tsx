@@ -5,8 +5,8 @@ class HomeAbout extends Component {
   render() {
     return (
       <>
-        <div className="homeAboutContainer container-lg">
-          <h2 className="homeAboutTitle text-center mx-auto mb-5 text-secondary">
+        <div className="homeAboutContainer container-lg sectionPadding">
+          <h2 className="homeAboutTitle text-center mx-auto mb-5 text-secondary w-75">
             Hello! I'm Caitlyn. Welcome to my blog. Here on this blog you will
             be able to find travel diary with traveling tips.
           </h2>
