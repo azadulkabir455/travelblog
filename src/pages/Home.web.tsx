@@ -1,3 +1,4 @@
+import HomeAbout from "../components/home/HomeAbout";
 import HomeCarousel from "../components/home/HomeCarousel";
 import HomeController from "../controllers/HomeController";
 
@@ -6,6 +7,7 @@ export default class Home extends HomeController {
     return (
       <>
       <HomeCarousel settings={this.settings}/>
+      <HomeAbout />
       </>
     );
   }

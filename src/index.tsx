@@ -6,13 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
+// Carousel CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Global CSS
 import "./styles/customizeTheme.scss"
 import "./styles/global.scss"
 
+// Page CSS
 import "./styles/home/home.scss"
+
+// Global Component CSS
+import "./styles/global/card.scss"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

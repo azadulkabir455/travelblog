@@ -6,6 +6,10 @@
     padding:0;
     box-sizing: border-box; 
 }
+::selection {
+    background-color:#d16b86;
+    color: #fff;
+}
 body {
     font-family: 'Urbanist', sans-serif;
 }

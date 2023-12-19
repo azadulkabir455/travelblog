@@ -1,0 +1,19 @@
+@import "../global.scss";
+
+.cardContainer {
+    .imgContainer {
+        .overlay {
+            height: 0;
+            opacity: 0;
+            transition: all .25s linear;
+            font-size: 19px;
+        }
+        &:hover .overlay{
+            height: 100%;
+            opacity: .7;
+        }
+    }
+    .cardText {
+        @include secondaryHeading;
+    }
+}

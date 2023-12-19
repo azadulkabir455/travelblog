@@ -52,3 +52,11 @@
         }
     }
 }
+
+.homeAboutContainer {
+    padding: 120px;
+    .homeAboutTitle {
+        @include primaryHeading;
+        width: 80%;
+    }
+}
