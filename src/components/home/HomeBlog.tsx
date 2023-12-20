@@ -1,15 +1,20 @@
 import React, { Component } from "react";
 import { Twitter, Facebook, Dribbble, Instagram, Youtube } from "react-feather";
 import BlogList from "../global/BlogList";
+import SideBarContent from "../global/SideBarContent";
+import BlogCardLarge from "../global/BlogCardLarge";
 
 export default class HomeBlog extends Component {
   render() {
     return (
       <>
-        <div className="container-lg g-4 sectionPadding">
-          <div className="row">
+        <div className="container-lg sectionPadding">
+          <div className="row g-5">
             <div className="col-12 col-lg-8">
-              <h1>Hi</h1>
+              <BlogCardLarge />
+              <BlogCardLarge />
+              <BlogCardLarge />
+              <BlogCardLarge />
             </div>
             <div className="col-12 col-lg-4">
               <div className="sideBarAboutSection mb-5">
@@ -53,6 +58,9 @@ export default class HomeBlog extends Component {
                   date="8 August 2022"
                   comment="3"
                 />
+              </div>
+              <div className="sideBarContent">
+                <SideBarContent />
               </div>
             </div>
           </div>
