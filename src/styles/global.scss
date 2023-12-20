@@ -15,31 +15,6 @@ $secondary: #343f52;
 body {
     font-family: 'Urbanist', sans-serif;
 }
-.icon {
-    width: 18px;
-    height: 18px;
-}
-.sectionPadding {
-    padding-bottom: 120px;
-    @media only screen and (max-width: 992px) {
-        padding-bottom: 60px 0;
-    }
-    @media only screen and (max-width: 768px) {
-        padding-bottom: 40px 0;
-    }
-}
-.iconContainer {
-    &:not(:last-child)::after {
-        content: "";
-        width: 5px;
-        height: 5px;
-        border-radius: 10px;
-        background-color: rgba(184, 186, 189, 0.5);
-        opacity: .5;
-        position: relative;
-        left: 10px;
-    }
-}
 
 @mixin primaryHeading {
     font-size: 34px;
@@ -78,3 +53,57 @@ body {
     font-weight: 600;
     text-transform: capitalize;
 }
+
+.icon {
+    width: 18px;
+    height: 18px;
+}
+.sectionPadding {
+    padding-bottom: 120px;
+    @media only screen and (max-width: 992px) {
+        padding-bottom: 60px 0;
+    }
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 40px 0;
+    }
+}
+.iconContainer {
+    &:not(:last-child)::after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 10px;
+        background-color: rgba(184, 186, 189, 0.5);
+        opacity: .5;
+        position: relative;
+        left: 10px;
+    }
+}
+
+.listStyle {
+    h3 {
+        @include secondaryHeading;
+    }
+    ul.categoriesList {
+        list-style: none;
+        li{
+            position: relative;
+            &::before {
+                content: "";
+                width: 5px;
+                height: 5px;
+                border-radius: 20px;
+                background-color: #d16b86;
+                display: block;
+                position: absolute;
+                left: -20px;
+                top: 11px;
+            }
+            p {
+                @include paragraph;
+            }
+        }
+    }
+}
+
+
