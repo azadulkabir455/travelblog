@@ -4,10 +4,19 @@
     img {
         height: 65px;
     }
+
     h4 {
         @include blogHeadingSecondary;
         transition: all .3s linear;
         color: $secondary;
+
+        &:hover {
+            color: $primary
+        }
+    }
+
+    h4.whiteTitle {
+        color: #ffffff9c;
         &:hover {
             color: $primary
         }

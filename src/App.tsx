@@ -1,8 +1,12 @@
-import Home from './pages/Home.web';
+import Footer from "./components/global/Footer";
+import Home from "./pages/Home.web";
 
 function App() {
   return (
-    <Home />
+    <>
+      <Home />
+      <Footer />
+    </>
   );
 }
 

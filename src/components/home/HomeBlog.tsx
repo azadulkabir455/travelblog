@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Twitter, Facebook, Dribbble, Instagram, Youtube } from "react-feather";
-import BlogList from "../global/BlogList";
 import SideBarContent from "../global/SideBarContent";
 import BlogCardLarge from "../global/BlogCardLarge";
+import PopularPost from "../global/PopularPost";
+import SocialIcons from "../global/SocialIcons";
 
 export default class HomeBlog extends Component {
   render() {
@@ -15,12 +15,13 @@ export default class HomeBlog extends Component {
               <BlogCardLarge />
               <div className="row">
                 <div className="col-12 col-lg-6">
-                  <BlogCardLarge large={true}/>
+                  <BlogCardLarge large={true} />
                 </div>
                 <div className="col-12 col-lg-6">
-                  <BlogCardLarge large={true}/>
+                  <BlogCardLarge large={true} />
                 </div>
               </div>
+              <a href="/" className="d-block text-end text-capitalize link-offset-2">Read more</a>
             </div>
             <div className="col-12 col-lg-4">
               <div className="sideBarAboutSection mb-5">
@@ -36,35 +37,9 @@ export default class HomeBlog extends Component {
                   pharetra augue. Donec id elit non mi porta gravida at eget
                   metus.
                 </p>
-                <div className="socialContainer hstack gap-3">
-                  <Twitter className="socialIcon" color="#5DAED5" />
-                  <Facebook className="socialIcon" color="#4470CF" />
-                  <Dribbble className="socialIcon" color="#E95297" />
-                  <Instagram className="socialIcon" color="#D53581" />
-                  <Youtube className="socialIcon" color="#C8312B" />
-                </div>
+                <SocialIcons />
               </div>
-              <div className="sideBarPopularPost">
-                <h3 className="text-secondary m-0 mb-4">Popular Posts</h3>
-                <BlogList
-                  imgUrl="https://shorturl.at/lFGNX"
-                  title="Magna Mollis Ultricies"
-                  date="8 August 2022"
-                  comment="3"
-                />
-                <BlogList
-                  imgUrl="https://shorturl.at/cdoxJ"
-                  title="Foxi Mollis Lucas"
-                  date="8 August 2022"
-                  comment="3"
-                />
-                <BlogList
-                  imgUrl="https://shorturl.at/bjA15"
-                  title="Bob Ipsum moges"
-                  date="8 August 2022"
-                  comment="3"
-                />
-              </div>
+              <PopularPost title="Popular Posts" />
               <div className="sideBarContent">
                 <SideBarContent />
               </div>
