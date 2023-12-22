@@ -1,0 +1,53 @@
+@import "../global.scss";
+
+.blogCardLarge {
+    .imgContainer {
+        img {
+            height: 400px;
+        }
+        img.large {
+            height: 300px;
+        }
+        .overlay {
+            transform: scale(.5) !important;
+            opacity: 0;
+            transition: all .2s linear;
+        }
+
+        &:hover .overlay {
+            opacity: 1;
+            transform: scale(1) !important;
+        }
+
+    }
+    .media {
+        height: 400px !important;
+    }
+    .media.large {
+        height: 300px !important;
+    }
+    h4 {
+        @include blogPreHeading;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            width: 18px;
+            height: 2px;
+            border-radius: 5px;
+            background-color: $primary;
+            position: absolute;
+            left:0;
+            top: 10px;
+        }
+    }
+    h3 {
+        @include blogHeading;
+    }
+    h3.large {
+        font-size: 23px;
+    }
+    p {
+        @include paragraph;
+    }
+}

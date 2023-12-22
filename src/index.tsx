@@ -21,6 +21,7 @@ import "./styles/home/home.scss"
 import "./styles/global/card.scss"
 import "./styles/global/bloglist.scss"
 import "./styles/global/sidebarContent.scss"
+import "./styles/global/blogCardLarge.scss"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

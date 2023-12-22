@@ -13,8 +13,14 @@ export default class HomeBlog extends Component {
             <div className="col-12 col-lg-8">
               <BlogCardLarge />
               <BlogCardLarge />
-              <BlogCardLarge />
-              <BlogCardLarge />
+              <div className="row">
+                <div className="col-12 col-lg-6">
+                  <BlogCardLarge large={true}/>
+                </div>
+                <div className="col-12 col-lg-6">
+                  <BlogCardLarge large={true}/>
+                </div>
+              </div>
             </div>
             <div className="col-12 col-lg-4">
               <div className="sideBarAboutSection mb-5">
