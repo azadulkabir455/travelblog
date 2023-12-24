@@ -1,35 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { BrowserRouter as Router } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
 
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // Carousel CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Global CSS
-import "./styles/customizeTheme.scss"
-import "./styles/global.scss"
+import "./styles/customizeTheme.scss";
+import "./styles/global.scss";
 
 // Page CSS
-import "./styles/home/home.scss"
+import "./styles/home/home.scss";
 
 // Global Component CSS
-import "./styles/global/card.scss"
-import "./styles/global/bloglist.scss"
-import "./styles/global/sidebarContent.scss"
-import "./styles/global/blogCardLarge.scss"
-import "./styles/global/footer.scss"
+import "./styles/global/card.scss";
+import "./styles/global/bloglist.scss";
+import "./styles/global/sidebarContent.scss";
+import "./styles/global/blogCardLarge.scss";
+import "./styles/global/footer.scss";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 

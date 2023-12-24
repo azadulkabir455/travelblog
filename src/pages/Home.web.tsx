@@ -1,3 +1,4 @@
+import Footer from "../components/global/Footer";
 import HomeAbout from "../components/home/HomeAbout";
 import HomeBlog from "../components/home/HomeBlog";
 import HomeCarousel from "../components/home/HomeCarousel";
@@ -10,6 +11,7 @@ export default class Home extends HomeController {
       <HomeCarousel settings={this.settings}/>
       <HomeAbout />
       <HomeBlog />
+      <Footer />
       </>
     );
   }

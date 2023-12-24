@@ -1,11 +1,9 @@
-import Footer from "./components/global/Footer";
-import Home from "./pages/Home.web";
+import WebRoutes from "./routes/WebRoutes.web";
 
 function App() {
   return (
     <>
-      <Home />
-      <Footer />
+      <WebRoutes />
     </>
   );
 }
