@@ -26,7 +26,7 @@ import "./styles/global/blogCardLarge.scss";
 import "./styles/global/footer.scss";
 
 // Form CSS
-import "./styles/form/signInSignUpContainer.scss"
+import "./styles/form/customForm.scss"
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
