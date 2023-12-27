@@ -51,19 +51,4 @@
     p {
         @include paragraph;
     }
-    .socialContainer {
-        .socialIcon {
-            width: 22px;
-            height: 22px;
-            transition: all .20s linear;
-            &:hover {
-                transform: translateY(-10px);
-            }
-        }
-    }
-}
-.sideBarPopularPost {
-    h3 {
-        @include secondaryHeading;
-    }
 }

@@ -6,11 +6,12 @@ type BlogListType = {
   title: string;
   date: string;
   comment: string;
+  dark?: boolean;
 };
 
-export default class BlogList extends Component <BlogListType>{
+export default class BlogList extends Component<BlogListType> {
   render() {
-    const {imgUrl, title, date, comment} = this.props
+    const { imgUrl, title, date, comment, dark } = this.props;
     return (
       <>
         <div className="row g-3 blogList pb-4">
@@ -22,9 +23,13 @@ export default class BlogList extends Component <BlogListType>{
             />
           </div>
           <div className="col-9">
-            <h4>{title}</h4>
+            <h4 className={`${dark?"whiteTitle":""}`}>{title}</h4>
             <div className="blogDetails">
-              <BlogMeta date={date} comment={comment} dark={true} />
+              <BlogMeta
+                date={date}
+                comment={comment}
+                dark={dark ? false : true}
+              />
             </div>
           </div>
         </div>

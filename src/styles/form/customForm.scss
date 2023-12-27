@@ -1,0 +1,63 @@
+@use "../global.scss" as *;
+
+
+.signInSignUpContainer {
+    .signInSignUpContainerLeftSide {
+        background-image: url("https://shorturl.at/dpszG");
+        background-color: #265f6b;
+        background-blend-mode: hard-light;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .contentContainer {
+            h4 {
+                font-size: 72px;
+                line-height: 72px;
+            }
+
+            p {
+                @include paragraph;
+            }
+        }
+    }
+
+    .formContainer {
+        padding: 160px 60px 0;
+    }
+}
+
+.signInSignUpForm {
+    .formHeader {
+        h3 {
+            @include primaryHeading;
+        }
+
+        p {
+            @include paragraph;
+        }
+    }
+
+    .formFotter {
+        .divider {
+
+            &::before,
+            &::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: #ddd;
+                position: absolute;
+                left: 0;
+                top: 10px;
+            }
+        }
+
+        button {
+            img {
+                width: 30px;
+                height: auto;
+            }
+        }
+    }
+}
