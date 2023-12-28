@@ -14,45 +14,23 @@ class Login extends SignInSignUpController {
         <SignInSignUpContainer>
           <div className="signInSignUpForm w-75">
             <div className="formHeader mb-4">
-              <h3 className="text-secondary">Sign in</h3>
-              <p className="text-body-secondary">
-                It is pleasure that you are connected with us.
-              </p>
+              <h3 className="text-secondary">Reset password</h3>
             </div>
             <div className="formBody pb-4">
               <form action="">
                 <InputField label="email" type="text" icon={<Mail size="18" color="#343f5281"/>} />
-                <InputField
-                  label="password"
-                  type={`${showPassValue ? "text" : "password"}`}
-                  icon={<Lock size="18"  color="#343f5281" />}
-                  password={true}
-                  showPassValue={showPassValue}
-                  showPassFunc={showPassFunc}
-                />
                 <button className="btn btn-lg btn-primary rounded-5 text-light text-capitalize w-100 mt-3">
-                  Sign In
+                  Send email
                 </button>
               </form>
-              <div className="forgotPass">
-                <Link to="/forgotpass" className="d-inline-block float-end link-offset-2 mt-2">
-                  Forgot password
-                </Link>
-              </div>
             </div>
-            <div className="formFotter d-flex flex-column justify-content-center align-items-center mt-5">
+            <div className="formFotter d-flex flex-column justify-content-center align-items-center mt-4">
               <div className="divider position-relative w-100 pb-5">
                 <p className="text-uppercase text-secondary text-bg-light px-3 mt-0 position-absolute start-50 translate-middle-x z-3">or</p>
               </div>
-              <div className="signInWithGoogle">
-                <button className="btn text-secondary btn-light shadow py-2 px-3 rounded-5">
-                  <img src="https://shorturl.at/lzUW1" alt="" className="me-2"/>
-                  Sign in with google
-                </button>
-              </div>
               <div className="registrationLink">
-                <p className="mt-3 text-body-tertiary text-center">
-                  Don't have account please <Link to="/signup" className="link-underline link-underline-opacity-0 text-capitalize d-inline-block">Sign up here</Link>
+                <p className="text-body-tertiary text-center">
+                  Back to the <Link to="/signin" className="link-underline link-underline-opacity-0 text-capitalize d-inline-block">Sign in page</Link>
                 </p>
               </div>
             </div>

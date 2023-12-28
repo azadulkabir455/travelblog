@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 export type SignInSignUpPropsType = {
   showPassValue: boolean;
   showPassFunc: () => void;
+  showConfirmPassValue: boolean;
+  showConfirmPassFunc: () => void;
 }
 type SignInSignUpStateType = {
 
