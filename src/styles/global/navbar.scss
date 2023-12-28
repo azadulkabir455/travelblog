@@ -1,0 +1,29 @@
+@use "../global.scss" as *;
+
+.menubar {
+    .logo {
+        width: 140px;
+        height: auto;
+    }
+    .menu {
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            a, span {
+                color: $secondary;
+                transition: all .2s linear;
+                &:hover, &.active {
+                    color: $primary;
+                }
+            }
+            .dropdown-item:active {
+                background-color: transparent !important;
+            }
+        }
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}

@@ -2,6 +2,7 @@ import React, { Component, ComponentType } from "react";
 import { SignInSignUpPropsType } from "../controllers/SignInSignUpController";
 type InternalStateType = {
   showPassValue: boolean;
+  showConfirmPassValue: boolean
 };
 const ShowPassHoc = (OriginalComponent: ComponentType<SignInSignUpPropsType>) => {
   class NewComponent extends Component<{}, InternalStateType> {
@@ -9,6 +10,7 @@ const ShowPassHoc = (OriginalComponent: ComponentType<SignInSignUpPropsType>) =>
       super(props);
       this.state = {
         showPassValue: false,
+        showConfirmPassValue:false
       };
     }
     showPassHandler = () => {
@@ -16,11 +18,18 @@ const ShowPassHoc = (OriginalComponent: ComponentType<SignInSignUpPropsType>) =>
         showPassValue: !prevState.showPassValue,
       }));
     };
+    showConfirmPassFunc = () => {
+      this.setState((prevState) => ({
+        showConfirmPassValue: !prevState.showConfirmPassValue,
+      }));
+    };
     render() {
       return (
         <OriginalComponent
           showPassValue={this.state.showPassValue}
           showPassFunc={this.showPassHandler}
+          showConfirmPassValue ={this.state.showConfirmPassValue}
+          showConfirmPassFunc={this.showConfirmPassFunc}
           {...this.props}
           />
       );

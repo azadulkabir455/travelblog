@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
+
 
 $primary: #d16b86;
 $secondary: #343f52;
+$bannerFont: 'Lobster Two', sans-serif;
 
 * {
     margin: 0;
@@ -13,7 +16,6 @@ $secondary: #343f52;
     background-color: #d16b86;
     color: #fff;
 }
-
 body {
     font-family: 'Urbanist', sans-serif;
 }
