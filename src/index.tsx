@@ -24,6 +24,7 @@ import "./styles/global/bloglist.scss";
 import "./styles/global/sidebarContent.scss";
 import "./styles/global/blogCardLarge.scss";
 import "./styles/global/footer.scss";
+import "./styles/global/navbar.scss"
 
 // Form CSS
 import "./styles/form/customForm.scss"

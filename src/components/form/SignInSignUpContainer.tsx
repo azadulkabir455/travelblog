@@ -1,4 +1,6 @@
 import React, { Component, ReactNode } from "react";
+import { ArrowRight } from "react-feather";
+import { Link } from "react-router-dom";
 
 type SignInSignUpContainerType = {
   children: ReactNode;
@@ -20,6 +22,11 @@ export default class SignInSignUpContainer extends Component<SignInSignUpContain
                 </div>
               </div>
               <div className="col-12 col-lg-5">
+                <div className="homeLink position-relative">
+                  <Link to="/" 
+                  className="position-absolute text-capitalize fw-bold link-underline link-underline-opacity-0" 
+                  style={{top:"20px", right: "20px"}}>Back to home <ArrowRight size="18"/></Link>
+                </div>
                 <div className="formContainer">{children}</div>
               </div>
             </div>

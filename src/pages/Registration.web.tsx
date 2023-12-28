@@ -34,14 +34,14 @@ class Registration extends SignInSignUpController {
                 />
                 <InputField
                   label="confirm-password"
-                  type={`${showPassValue ? "text" : "password"}`}
+                  type={`${showConfirmPassValue ? "text" : "password"}`}
                   icon={<Lock size="18" color="#343f5281" />}
                   password={true}
                   showPassValue={showConfirmPassValue}
                   showPassFunc={showConfirmPassFunc}
                 />
                 <button className="btn btn-lg btn-primary rounded-5 text-light text-capitalize w-100 mt-3">
-                  Sign uo
+                  Sign up
                 </button>
               </form>
             </div>
