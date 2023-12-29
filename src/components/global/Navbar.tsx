@@ -7,7 +7,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <>
-        <div className="position-sticky top-0 z-3 mb-4">
+        <div className="position-sticky top-0 z-3">
           <div className="navbar navbar-expand bg-light menubar">
             <div className="container-lg">
               <Link to="/" className="navbar-brand">
