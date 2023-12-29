@@ -1,0 +1,15 @@
+@use "../global.scss" as *;
+
+.notFound {
+    padding: 80px 0;
+    img {
+        max-width: 60%;
+    }
+    h3 {
+        @include primaryHeading;
+    }
+    p {
+        @include paragraph;
+        max-width: 38%;
+    }
+}
