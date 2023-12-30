@@ -1,0 +1,33 @@
+@use "../global.scss" as *;
+
+.blogBanner {
+    padding: 120px 0;
+    h3 {
+        @include bannerHeading;
+    }
+    p {
+        @include blogHeadingSecondary;
+    }
+}
+
+.blogContainer {
+    .shortingArea {
+        svg {
+            cursor: pointer;
+            color: #343f52;
+            transition: all .2s linear;
+            &:hover, &.active {
+                color: #d16b86;
+                border-color: transparent;
+            }
+        }
+    }
+    .searchBox {
+        h3 {
+            @include secondaryHeading;
+        }
+        .searchIcon {
+            cursor: pointer;
+        }
+    }
+}

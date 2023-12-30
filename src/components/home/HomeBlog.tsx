@@ -15,10 +15,10 @@ export default class HomeBlog extends Component {
               <BlogCardLarge />
               <div className="row">
                 <div className="col-12 col-lg-6">
-                  <BlogCardLarge large={true} />
+                  <BlogCardLarge small={true} />
                 </div>
                 <div className="col-12 col-lg-6">
-                  <BlogCardLarge large={true} />
+                  <BlogCardLarge small={true} />
                 </div>
               </div>
               <a href="/" className="d-block text-end text-capitalize link-offset-2">Read more</a>
