@@ -16,7 +16,8 @@ import "./styles/customizeTheme.scss";
 import "./styles/global.scss";
 
 // Page CSS
-import "./styles/home/home.scss";
+import "./styles/pages/home.scss";
+import "./styles/pages/blogs.scss"
 
 // Global Component CSS
 import "./styles/global/card.scss";

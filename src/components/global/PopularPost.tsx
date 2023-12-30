@@ -11,7 +11,7 @@ export default class PopularPost extends Component<PopularPostType> {
     return (
       <>
         <div className="popularPost">
-          <h3 className={`${dark?"text-light":"text-secondary"} m-0 mb-4`}>Popular Posts</h3>
+          <h3 className={`${dark?"text-light":"text-secondary"} m-0 mb-4`}>{title}</h3>
           <BlogList
             imgUrl="https://shorturl.at/lFGNX"
             title="Magna Mollis Ultricies"

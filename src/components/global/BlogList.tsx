@@ -19,11 +19,11 @@ export default class BlogList extends Component<BlogListType> {
             <img
               src={imgUrl}
               alt=""
-              className="w-100 img-fuild object-cover rounded-3"
+              className="w-100 img-fuild object-fit-cover rounded-3"
             />
           </div>
           <div className="col-9">
-            <h4 className={`${dark?"whiteTitle":""}`}>{title}</h4>
+            <h4 className={`${dark?"whiteTitle":""} fw-bolder text-capitalize`}>{title}</h4>
             <div className="blogDetails">
               <BlogMeta
                 date={date}
