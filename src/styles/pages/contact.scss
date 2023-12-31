@@ -1,0 +1,30 @@
+@use "../global.scss" as *;
+
+.contactUsBanner {
+    padding: 120px 0 180px;
+    h3 {
+        @include bannerHeading;
+    }
+    p{
+        @include blogHeadingSecondary;
+        max-width: 450px;
+    }
+}
+.contactInfo {
+    margin: -120px auto 120px;
+    max-width: 800px;
+    h4 {
+        @include secondaryHeading;
+    }
+    p {
+        @include paragraph;
+        max-width: 260px;
+        a {
+            color: $secondary;
+            transition: all .3s linear;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
