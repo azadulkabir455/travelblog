@@ -17,7 +17,8 @@ import "./styles/global.scss";
 
 // Page CSS
 import "./styles/pages/home.scss";
-import "./styles/pages/blogs.scss"
+import "./styles/pages/blogs.scss";
+import "./styles/pages/contact.scss"
 
 // Global Component CSS
 import "./styles/global/card.scss";
