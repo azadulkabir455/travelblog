@@ -1,9 +1,8 @@
 import ContactUsController from "../controllers/ContactUsController";
 import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
-import { Mail, Map, MapPin, Phone } from "react-feather";
+import { Mail, MapPin, Phone } from "react-feather";
 import IconBox from "../components/global/IconBox";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 export default class Contact extends ContactUsController {
   render() {
@@ -21,22 +20,15 @@ export default class Contact extends ContactUsController {
         </div>
         <div className="contactInfo">
           <div className="row g-4 bg-light rounded-4 shadow-lg">
-            <div className="col-12 col-lg-7">
-              {/* <MapContainer
-                center={[51.505, -0.09]}
-                zoom={13}
-                scrollWheelZoom={false}
-              >
-                <TileLayer
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <Marker position={[51.505, -0.09]}>
-                  <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                  </Popup>
-                </Marker>
-              </MapContainer> */}
+            <div className="col-12 col-lg-7 m-0 px-0 pe-4">
+              <div className="position-relative h-100 rounded-3 overflow-hidden">
+                <iframe
+                  src="https://shorturl.at/dmp46"
+                  style={{ border: 0, width: "100%", height: "100%" }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
             <div className="col-12 col-lg-5 pt-5 pb-4">
               <IconBox
