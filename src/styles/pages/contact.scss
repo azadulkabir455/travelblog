@@ -28,3 +28,13 @@
         }
     }
 }
+.contactForm {
+    max-width: 800px;
+    h3 {
+        @include primaryHeading;
+    
+    }
+    p {
+        @include paragraph;
+    }
+}
