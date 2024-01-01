@@ -3,6 +3,9 @@ import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
 import { Mail, MapPin, Phone } from "react-feather";
 import IconBox from "../components/global/IconBox";
+import { Formik, Form } from "formik";
+import InputField from "../components/form/component/InputField";
+import TextAreaField from "../components/form/component/TextAreaField";
 
 export default class Contact extends ContactUsController {
   render() {
@@ -86,6 +89,41 @@ export default class Contact extends ContactUsController {
                 </>
               </IconBox>
             </div>
+          </div>
+        </div>
+        <div className="contactForm sectionPadding mx-auto">
+          <h3 className="text-secondary text-center text-capitalize fw-bolder mb-3">
+            Drop Us a Line
+          </h3>
+          <p className="text-center text-body-secondary">
+            Reach out to us from our contact form and we will get back to you
+            shortly.
+          </p>
+          <div className="formContainer">
+            <Formik
+              initialValues={this.initialValues}
+              onSubmit={this.onSubmit}
+              validationSchema={this.validationSchema}
+            >
+              {(formik) => (
+                <Form>
+                  <InputField
+                    name="name"
+                    label="Name"
+                    type="text"
+                    placeholder="Write your name"
+                  />
+                  <TextAreaField 
+                    name="message"
+                    label="Message"
+                    placeholder="Write your massege"
+                  />
+                  <button className="btn btn-primary" type="submit">
+                    Submit
+                  </button>
+                </Form>
+              )}
+            </Formik>
           </div>
         </div>
         <Footer />
