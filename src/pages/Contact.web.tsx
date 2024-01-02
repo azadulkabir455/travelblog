@@ -1,13 +1,18 @@
 import ContactUsController from "../controllers/ContactUsController";
 import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
-import { Mail, MapPin, Phone } from "react-feather";
+import { Mail, MapPin, Phone, User } from "react-feather";
 import IconBox from "../components/global/IconBox";
 import { Formik, Form } from "formik";
 import InputField from "../components/form/component/InputField";
 import TextAreaField from "../components/form/component/TextAreaField";
 
 export default class Contact extends ContactUsController {
+  option = [
+    { key: "Volvo", value: "volvo" },
+    { key: "Audi", value: "audi" },
+    { key: "Ferarri", value: "ferarri" },
+  ];
   render() {
     return (
       <>
@@ -99,7 +104,7 @@ export default class Contact extends ContactUsController {
             Reach out to us from our contact form and we will get back to you
             shortly.
           </p>
-          <div className="formContainer">
+          <div className="formContainer mt-4">
             <Formik
               initialValues={this.initialValues}
               onSubmit={this.onSubmit}
@@ -107,18 +112,35 @@ export default class Contact extends ContactUsController {
             >
               {(formik) => (
                 <Form>
-                  <InputField
-                    name="name"
-                    label="Name"
-                    type="text"
-                    placeholder="Write your name"
-                  />
-                  <TextAreaField 
-                    name="message"
-                    label="Message"
-                    placeholder="Write your massege"
-                  />
-                  <button className="btn btn-primary" type="submit">
+                  <div className="row">
+                    <div className="col-12 col-lg-6">
+                      <InputField
+                        name="name"
+                        label="Name"
+                        type="text"
+                        placeholder="Write your name"
+                      />
+                    </div>
+                    <div className="col-12 col-lg-6">
+                    <InputField
+                        name="email"
+                        label="Email"
+                        type="text"
+                        placeholder="Write your email"
+                      />
+                    </div>
+                    <div className="col-12">
+                      <TextAreaField
+                        name="message"
+                        label="Message"
+                        placeholder="Write your massege"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    className="btn btn-lg btn-primary rounded-pill  w-50 text-light fw-medium text-capitalize mx-auto mt-3 d-block"
+                    type="submit"
+                  >
                     Submit
                   </button>
                 </Form>
