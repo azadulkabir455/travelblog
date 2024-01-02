@@ -20,7 +20,7 @@ class InputField extends Component<InputFieldType> {
           </label>
           <div className="input-group rounded-5 border border-body-secondary overflow-hidden">
             <span className="input-group-text border-0">{icon}</span>
-            <input type={type} className="form-control form-control-lg border-0 shadow-none" id={label} />
+            <input type={type} className="form-control form-control-lg border-0 shadow-none ps-0" id={label} />
             {password ? (
               <span
                 className="input-group-text border-0"

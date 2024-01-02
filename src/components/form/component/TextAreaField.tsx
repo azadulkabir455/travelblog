@@ -12,10 +12,11 @@ export default class TextAreaField extends Component<TextAreaFieldType> {
     return (
       <>
         <div className="mb-3">
-          <label htmlFor={name}>{label}</label>
+          <label htmlFor={name} className="form-label text-body-secondary fw-bold">{label} :</label>
           <Field
             as="textarea"
-            className="form-control"
+            rows="5"
+            className="form-control rounded-4"
             name={name}
             id={name}
             placeholder={placeholder ? placeholder : null}
