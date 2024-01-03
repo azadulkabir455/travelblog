@@ -1,0 +1,15 @@
+@use "../global.scss" as *;
+
+.contactUsBanner {
+    h3 {
+        @include bannerHeading;
+    }
+    p{
+        @include blogHeadingSecondary;
+    }
+}
+.profileContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 120px 0;
+}

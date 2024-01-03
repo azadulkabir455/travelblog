@@ -29,7 +29,7 @@ export default class Navbar extends Component {
                     Contact
                   </NavLink>
                 </li>
-                {/* <li className="nav-item dropdown">
+                <li className="nav-item dropdown">
                   <span
                     className="nav-link dropdown-toggle fw-bold"
                     role="button"
@@ -44,7 +44,7 @@ export default class Navbar extends Component {
                   <ul className="dropdown-menu border-0 rounded-0 shadow">
                     <li>
                       <Link
-                        to="/"
+                        to="/profile"
                         className="dropdown-item fw-bold d-flex align-items-center"
                       >
                         <User size="16" className="me-2" />
@@ -67,8 +67,8 @@ export default class Navbar extends Component {
                       </Link>
                     </li>
                   </ul>
-                </li> */}
-                <li className="nav-item dropdown ms-2">
+                </li>
+                {/* <li className="nav-item dropdown ms-2">
                   <span
                     className="nav-link dropdown-toggle bg-primary text-light fw-bold rounded-pill py-2 px-3"
                     role="button"
@@ -86,7 +86,7 @@ export default class Navbar extends Component {
                       </Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

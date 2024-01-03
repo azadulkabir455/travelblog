@@ -18,7 +18,7 @@ export default class Contact extends ContactUsController {
       <>
         <Navbar />
         <div className="contactUsBanner bg-primary bg-opacity-10 rounded-4 mx-4">
-          <h3 className="text-center text-capitalize text-secondary fw-bolder mb-3 ">
+          <h3 className="text-center text-capitalize text-secondary mb-3 ">
             Get in touch
           </h3>
           <p className="text-center fw-bold text-body-secondary mx-auto">
