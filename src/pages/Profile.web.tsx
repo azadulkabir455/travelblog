@@ -6,8 +6,13 @@ import InputField from "../components/form/component/InputField";
 import { Mail, Phone, User } from "react-feather";
 import TextAreaField from "../components/form/component/TextAreaField";
 import SelectField from "../components/form/component/SelectField";
+import ImgInputField from "../components/form/component/ImgInputField";
 
 export default class Profile extends ProfileController {
+  constructor(props: any) {
+    super(props);
+  }
+
   render() {
     return (
       <>
@@ -27,10 +32,15 @@ export default class Profile extends ProfileController {
             onSubmit={this.onSubmit}
             validationSchema={this.validationSchema}
           >
-            {(formik) => (
+            {({ values, setFieldValue }) => (
               <Form>
                 <div className="row g-4">
-                  <div className="col-12 col-lg-5 mt-0"></div>
+                  <div className="col-12 col-lg-5 mt-0">
+                    <ImgInputField
+                    values={values.file}
+                    name="file"
+                    setFieldValue={setFieldValue} />
+                  </div>
                   <div className="col-12 col-lg-7 mt-0">
                     <InputField
                       icon={<User color="#343f52" size="18px" />}

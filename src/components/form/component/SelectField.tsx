@@ -20,7 +20,7 @@ export default class SelectField extends Component<SelectFieldType> {
           <label htmlFor={name} className="form-label text-body-secondary fw-bold">
             {label} :
           </label>
-          <Field as="select" name={name} id={name} className="form-select">
+          <Field as="select" name={name} id={name} className="form-select form-select-lg rounded-pill">
             <option selected>
               Selected your option
             </option>
