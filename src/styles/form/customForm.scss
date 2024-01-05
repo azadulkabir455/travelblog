@@ -83,3 +83,14 @@
         bottom: 3%;
     }
 }
+.react-datepicker__input-container {
+    display: flex;
+    align-items: center;
+    svg {
+        margin-left: 5px;
+        margin-bottom: -1px;
+    }
+    .datePicker {
+        padding-left: 40px;
+    }
+}
