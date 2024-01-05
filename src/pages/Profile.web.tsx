@@ -3,10 +3,11 @@ import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
 import { Form, Formik } from "formik";
 import InputField from "../components/form/component/InputField";
-import { Mail, Phone, User } from "react-feather";
+import { Calendar, Facebook, Linkedin, Mail, Phone, User } from "react-feather";
 import TextAreaField from "../components/form/component/TextAreaField";
 import SelectField from "../components/form/component/SelectField";
 import ImgInputField from "../components/form/component/ImgInputField";
+import DatePicker from "../components/form/component/DatePicker";
 
 export default class Profile extends ProfileController {
   constructor(props: any) {
@@ -37,9 +38,10 @@ export default class Profile extends ProfileController {
                 <div className="row g-4">
                   <div className="col-12 col-lg-5 mt-0">
                     <ImgInputField
-                    values={values.file}
-                    name="file"
-                    setFieldValue={setFieldValue} />
+                      values={values.file}
+                      name="file"
+                      setFieldValue={setFieldValue}
+                    />
                   </div>
                   <div className="col-12 col-lg-7 mt-0">
                     <InputField
@@ -74,10 +76,35 @@ export default class Profile extends ProfileController {
                       options={this.occuptionValues}
                     />
                   </div>
-                  <div className="col-12 col-lg-6 mt-0"></div>
+                  <div className="col-12 col-lg-6 mt-0">
+                    <DatePicker
+                      icon={<Calendar color="#343f52" size="18px"/>}
+                      name="dob"
+                      label="Date of birth"
+                      placeholder="Select your date of birth"
+                    />
+                  </div>
+                  <div className="col-12 col-lg-6 mt-0">
+                  <InputField 
+                    type="text"
+                    name="facebook"
+                    label="Facebook"
+                    icon={<Facebook color="#343f52" size="18px" />}
+                    placeholder="/username"
+                  />
+                  </div>
+                  <div className="col-12 col-lg-6 mt-0">
+                  <InputField 
+                    type="text"
+                    name="linkdin"
+                    label="Linkdin"
+                    icon={<Linkedin color="#343f52" size="18px" />}
+                    placeholder="/username"
+                  />
+                  </div>
                   <div>
                     <button
-                      className="btn btn-primary rounded-pill text-light fw-medium mt-4 float-end w-25"
+                      className="btn btn-primary rounded-pill text-light fw-medium mt-1 float-end w-25"
                       type="submit"
                     >
                       Submit

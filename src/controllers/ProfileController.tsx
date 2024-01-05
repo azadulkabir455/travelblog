@@ -22,6 +22,9 @@ export default class ProfileController extends Component<
     file: "",
     bio: "",
     occuption: "",
+    dob: null,
+    facebook: "",
+    linkdin: ""
   };
   onSubmit = (values: any) => {
     console.log("profile", values);
@@ -49,6 +52,7 @@ export default class ProfileController extends Component<
           !value ||
           (value && this.Supported_Format.includes((value as File)?.type))
       ),
+      dob: Yup.date().required("BOD requierd")
   });
   occuptionValues = [
     { key: "Job", value: "job" },

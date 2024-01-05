@@ -11,6 +11,9 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// DatePiceker CSS
+import "react-datepicker/dist/react-datepicker.css";
+
 // Global CSS
 import "./styles/customizeTheme.scss";
 import "./styles/global.scss";
