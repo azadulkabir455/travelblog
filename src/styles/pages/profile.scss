@@ -1,6 +1,6 @@
 @use "../global.scss" as *;
 
-.contactUsBanner {
+.editProfileBanner {
     h3 {
         @include bannerHeading;
     }
@@ -8,8 +8,38 @@
         @include blogHeadingSecondary;
     }
 }
-.profileContainer {
+.editProfileContainer {
     max-width: 600px;
     margin: 0 auto;
     padding: 120px 0;
+}
+
+.profileContainer {
+    max-width: 920px;
+    margin: auto;
+    .userProfile {
+        top: 90px;
+        img {
+            width: 80%;
+            height: auto;
+        }
+        h3 {
+            @include blogHeading;
+        }
+        p {
+            @include paragraph;
+        }
+        .socialIcon {
+            svg {
+                color: #59667c;
+                cursor: pointer;
+                margin: 0 5px;
+                transition: all .1s linear;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+    }
 }
