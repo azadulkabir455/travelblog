@@ -1,11 +1,14 @@
 @use "../global.scss" as *;
 
 .editProfileBanner {
+    padding: 120px 0;
     h3 {
         @include bannerHeading;
     }
     p{
         @include blogHeadingSecondary;
+        max-width: 450px;
+        margin: auto;
     }
 }
 .editProfileContainer {
@@ -18,6 +21,7 @@
     max-width: 920px;
     margin: auto;
     .userProfile {
+        margin-bottom: 3rem;
         top: 90px;
         img {
             width: 80%;
@@ -27,13 +31,13 @@
             @include blogHeading;
         }
         p {
-            @include paragraph;
+            @include blogPreHeading;
         }
         .socialIcon {
             svg {
-                color: #59667c;
+                color: $secondary;
                 cursor: pointer;
-                margin: 0 5px;
+                margin: 0 3px;
                 transition: all .1s linear;
                 &:hover {
                     color: $primary;
