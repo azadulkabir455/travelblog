@@ -8,6 +8,7 @@ import TextAreaField from "../components/form/component/TextAreaField";
 import SelectField from "../components/form/component/SelectField";
 import ImgInputField from "../components/form/component/ImgInputField";
 import DatePicker from "../components/form/component/DatePicker";
+import BreadCrumbs from "../components/global/BreadCrumbs";
 
 export default class EditProfile extends ProfileController {
   constructor(props: any) {
@@ -26,6 +27,7 @@ export default class EditProfile extends ProfileController {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
             praesentium!
           </p>
+          <BreadCrumbs />
         </div>
         <div className="editProfileContainer">
           <Formik

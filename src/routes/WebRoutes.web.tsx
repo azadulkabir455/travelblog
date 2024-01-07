@@ -30,14 +30,13 @@ export default class WebRoutes extends Component {
               }
             >
               <Route index element={<Home />} />
-              <Route path="/blogs" element={<Blogs />} />
-              <Route path="/contact" element={<ContactUs />} />
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/editprofile" element={<EditProfile />} />
-
-              <Route path="/signin" element={<Login />} />
-              <Route path="/signup" element={<Registration />} />
-              <Route path="/forgotpass" element={<ForgotPass />} />
+              <Route path="blogs" element={<Blogs />} />
+              <Route path="contact" element={<ContactUs />} />
+              <Route path="profile" element={<Profile />} />
+              <Route path="editprofile" element={<EditProfile />} />
+              <Route path="signin" element={<Login />} />
+              <Route path="signup" element={<Registration />} />
+              <Route path="forgotpass" element={<ForgotPass />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>

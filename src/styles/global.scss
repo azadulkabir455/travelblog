@@ -152,3 +152,7 @@ body {
         }
     }
 }
+
+.breadCrumbsContainer {
+    @include blogPreHeading;
+}

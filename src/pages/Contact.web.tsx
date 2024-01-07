@@ -6,6 +6,7 @@ import IconBox from "../components/global/IconBox";
 import { Formik, Form } from "formik";
 import InputField from "../components/form/component/InputField";
 import TextAreaField from "../components/form/component/TextAreaField";
+import BreadCrumbs from "../components/global/BreadCrumbs";
 
 export default class Contact extends ContactUsController {
   option = [
@@ -25,6 +26,7 @@ export default class Contact extends ContactUsController {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
             praesentium!
           </p>
+          <BreadCrumbs />
         </div>
         <div className="contactInfo">
           <div className="row g-4 bg-light rounded-4 shadow-lg">
