@@ -13,13 +13,19 @@ $bannerFont: 'Lobster Two', sans-serif;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: unset !important;
+}
+
 ::selection {
     background-color: #d16b86;
     color: #fff;
 }
+
 body {
     font-family: 'Urbanist', sans-serif;
 }
+
 @mixin bannerHeading {
     font-size: 58px;
     line-height: 68px;
@@ -64,9 +70,11 @@ body {
     font-size: 18px;
     line-height: 28px;
 }
-.break{
+
+.break {
     display: block;
 }
+
 .icon {
     width: 18px;
     height: 18px;
@@ -132,13 +140,19 @@ body {
         @include secondaryHeading;
     }
 }
+
 .socialContainer {
     .socialIcon {
         width: 22px;
         height: 22px;
         transition: all .20s linear;
+
         &:hover {
             transform: translateY(-10px);
         }
     }
+}
+
+.breadCrumbsContainer {
+    @include blogPreHeading;
 }

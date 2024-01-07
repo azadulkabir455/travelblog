@@ -3,7 +3,7 @@ import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
 import BlogCardLarge from "../components/global/BlogCardLarge";
 import { Edit, Edit2, Edit3, Facebook, Linkedin } from "react-feather";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default class Profile extends Component {
   render() {
@@ -20,7 +20,10 @@ export default class Profile extends Component {
                     className="image-fluid rounded-circle d-block mx-auto object-fit-cover"
                     alt="profile pic"
                   />
-                  <Link to="/editprofile" className="editIcon bg-light d-inline-block px-2 py-1 border border-3 border-body-secodary m-2 rounded-circle position-absolute">
+                  <Link
+                    to="/editprofile"
+                    className="editIcon bg-light d-inline-block px-2 py-1 border border-3 border-body-secodary m-2 rounded-circle position-absolute"
+                  >
                     <Edit size="16px" color="#d16b86" />
                   </Link>
                 </div>
@@ -40,13 +43,6 @@ export default class Profile extends Component {
                     className="border border-primary rounded-2 p-1"
                   />
                 </div>
-                {/* <Link
-                  to="/editprofile"
-                  className="text-center fw-medium d-block mt-3 link-underline link-underline-opacity-0"
-                >
-                  <Edit3 size="16px" className="me-1"/>
-                  Edit Profile
-                </Link> */}
               </div>
             </div>
             <div className="col-12 col-lg-7">

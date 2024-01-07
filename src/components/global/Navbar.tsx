@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Media } from "../../resource/Media";
 import { Link, NavLink } from "react-router-dom";
-import { Grid, LogIn, LogOut, User } from "react-feather";
+import { Grid, LogOut, User } from "react-feather";
 
-export default class Navbar extends Component {
+class Navbar extends Component {
   render() {
     return (
       <>
@@ -25,7 +25,7 @@ export default class Navbar extends Component {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/contact" className="nav-link fw-bold">
+                  <NavLink to="/contact"  className="nav-link fw-bold">
                     Contact
                   </NavLink>
                 </li>
@@ -95,3 +95,5 @@ export default class Navbar extends Component {
     );
   }
 }
+
+export default Navbar

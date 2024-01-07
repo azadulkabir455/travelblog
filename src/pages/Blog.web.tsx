@@ -6,6 +6,7 @@ import BlogList from "../components/global/BlogList";
 import { ArrowLeft, ArrowRight, Grid, List, Maximize, Search } from "react-feather";
 import SideBarContent from "../components/global/SideBarContent";
 import PopularPost from "../components/global/PopularPost";
+import BreadCrumbs from "../components/global/BreadCrumbs";
 
 export default class Blog extends BlogController {
   render() {
@@ -20,6 +21,7 @@ export default class Blog extends BlogController {
             Welcome to our journal. Here you can find the latest company news
             and business articles.
           </p>
+          <BreadCrumbs />
         </div>
         <div className="container-lg">
           <div className="blogContainer sectionPadding">
