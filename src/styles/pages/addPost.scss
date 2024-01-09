@@ -1,0 +1,15 @@
+@use "../global.scss" as *;
+
+.addPostBanner {
+    padding: 120px 0;
+    h3 {
+        @include bannerHeading;
+    }
+    p {
+        @include blogHeadingSecondary;
+    }
+}
+.addPostContainer {
+    max-width: 900px;
+    padding-bottom: 120px;
+}
