@@ -16,7 +16,8 @@ export default function BreadCrumbs() {
             to={currentLink}
             className="link-underline link-underline-opacity-0 text-secondary text-capitalize pe-none"
           >
-            {crumb === "editprofile"? "Edit profile": crumb}
+            {crumb === "editprofile"? "Edit profile":
+            crumb === "addpost"? "Add post" : crumb}
           </Link>
         </li>
       );

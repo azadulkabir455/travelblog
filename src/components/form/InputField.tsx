@@ -15,7 +15,7 @@ class InputField extends Component<InputFieldType> {
     return (
       <>
         <div className="mb-2">
-          <label className="form-label text-capitalize text-body-tertiary fw-bold mb-1" htmlFor={label}>
+          <label className="form-label text-capitalize  text-body-secondary fw-bold mb-1" htmlFor={label}>
             {label} :
           </label>
           <div className="input-group rounded-5 border border-body-secondary overflow-hidden">

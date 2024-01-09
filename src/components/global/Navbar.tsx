@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Media } from "../../resource/Media";
 import { Link, NavLink } from "react-router-dom";
-import { Grid, LogOut, User } from "react-feather";
+import { Grid, LogOut, Plus, User } from "react-feather";
 
 class Navbar extends Component {
   render() {
@@ -25,7 +25,7 @@ class Navbar extends Component {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/contact"  className="nav-link fw-bold">
+                  <NavLink to="/contact" className="nav-link fw-bold">
                     Contact
                   </NavLink>
                 </li>
@@ -49,6 +49,13 @@ class Navbar extends Component {
                       >
                         <User size="16" className="me-2" />
                         Profile
+                      </Link>
+                      <Link
+                        to="/addpost"
+                        className="dropdown-item fw-bold d-flex align-items-center text-capitalize"
+                      >
+                        <Plus size="16" className="me-2" />
+                        Add post
                       </Link>
                       <Link
                         to="/"
@@ -96,4 +103,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar
+export default Navbar;

@@ -16,7 +16,6 @@ const ImgInputField = (Props: ImgInputFieldType) => {
     imgFileRef.current.click();
   };
 
-  console.log("values", typeof values, values);
   return (
     <>
       <div className="d-flex flex-column align-items-center">
