@@ -23,7 +23,7 @@ import "./styles/pages/home.scss";
 import "./styles/pages/blogs.scss";
 import "./styles/pages/contact.scss";
 import "./styles/pages/profile.scss";
-import "./styles/pages/addPost.scss"
+import "./styles/pages/addPost.scss";
 
 // Global Component CSS
 import "./styles/global/card.scss";
@@ -32,10 +32,11 @@ import "./styles/global/sidebarContent.scss";
 import "./styles/global/blogCardLarge.scss";
 import "./styles/global/footer.scss";
 import "./styles/global/navbar.scss";
-import "./styles/global/notFound.scss"
+import "./styles/global/notFound.scss";
 
 // Form CSS
-import "./styles/form/customForm.scss"
+import "./styles/form/customForm.scss";
+import ErrorBoundary from "./components/global/ErrorBoundary";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -43,7 +44,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
     </Router>
   </React.StrictMode>
 );
