@@ -3,7 +3,7 @@ import { Calendar, User, MessageCircle } from "react-feather";
 type BlogMetaType = {
   date: string;
   author?: string;
-  comment: number | string;
+  comment?: number | string;
   dark?: boolean
 };
 export default class BlogMeta extends Component<BlogMetaType> {

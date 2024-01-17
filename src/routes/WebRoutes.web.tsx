@@ -8,7 +8,8 @@ const Blogs = lazy(() => import("../pages/Blog.web"));
 const ContactUs = lazy(() => import("../pages/Contact.web"));
 const Profile = lazy(() => import("../pages/Profile.web"));
 const EditProfile = lazy(() => import("../pages/EditProfile.web"));
-const AddPost = lazy(() => import("../pages/AddPost.web"))
+const AddPost = lazy(() => import("../pages/AddPost.web"));
+const SingleBlogPost = lazy(() => import("../pages/SingleBlogPages.web"))
 
 const Login = lazy(() => import("../pages/Login.web"));
 const Registration = lazy(() => import("../pages/Registration.web"));
@@ -36,6 +37,7 @@ export default class WebRoutes extends Component {
               <Route path="profile" element={<Profile />} />
               <Route path="editprofile" element={<EditProfile />} />
               <Route path="addpost" element={<AddPost />}/>
+              <Route path="blogs/:id" element={<SingleBlogPost />}/>
               <Route path="signin" element={<Login />} />
               <Route path="signup" element={<Registration />} />
               <Route path="forgotpass" element={<ForgotPass />} />

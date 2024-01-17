@@ -33,6 +33,9 @@ export default class AddPost extends AddPostController {
           >
             <Form>
               <div className="row g-5">
+                <div className="col-12">
+                  <BlogImageInputField />
+                </div>
                 <div className="col-12 col-md-6">
                   <TextAreaField name="excerpt" label="Blog excerpt" />
                 </div>

@@ -18,7 +18,7 @@ export default class InputField extends Component<InputFieldType> {
       <>
         <div className="mb-3">
           <label htmlFor={name} className="form-label text-body-secondary fw-bold mb-0">
-            {label} :
+            {label}
           </label>
           <div className="input-group rounded-pill border border-body-secondary overflow-hidden">
             {icon ? (
