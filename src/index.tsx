@@ -24,6 +24,7 @@ import "./styles/pages/blogs.scss";
 import "./styles/pages/contact.scss";
 import "./styles/pages/profile.scss";
 import "./styles/pages/addPost.scss";
+import "./styles/pages/singleBlogPage.scss"
 
 // Global Component CSS
 import "./styles/global/card.scss";
