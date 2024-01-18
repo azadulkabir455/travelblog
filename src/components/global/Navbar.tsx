@@ -58,7 +58,7 @@ class Navbar extends Component {
                         Add post
                       </Link>
                       <Link
-                        to="/"
+                        to="/dashbord"
                         className="dropdown-item fw-bold d-flex align-items-center"
                       >
                         <Grid size="16" className="me-2" />
