@@ -82,35 +82,97 @@ export default class SingleBlogPages extends SignleBlogPageController {
               <div className="singleBlogComment p-3 rounded shadow">
                 <h3 className="text-secondary mb-4">5 Comments</h3>
                 <div className="commentContainer">
-                  <div className="commentInfo d-flex justify-content-between align-items-center">
-                    <div className="profile d-flex">
-                      <img
-                        src="https://shorturl.at/dhEQV"
-                        alt=""
-                        className="d-inline-block rounded-circle me-2"
-                      />
-                      <div className="name">
-                        <h2 className="m-0 text-secondary fw-bold">
-                          Connor Gibson
-                        </h2>
-                        <BlogMeta date="5 Jul 2022" dark={true} />
+                  <div className="singleComment mb-4">
+                    <div className="mb-4">
+                      <div className="commentInfo d-flex justify-content-between align-items-center">
+                        <div className="profile d-flex">
+                          <img
+                            src="https://shorturl.at/dhEQV"
+                            alt=""
+                            className="d-inline-block rounded-circle me-2"
+                          />
+                          <div className="name">
+                            <h2 className="m-0 text-secondary fw-bold">
+                              Connor Gibson
+                            </h2>
+                            <BlogMeta date="5 Jul 2022" dark={true} />
+                          </div>
+                        </div>
+                        <div className="reply">
+                          <button className="btn btn-primary py-2 px-3 rounded-pill text-light fw-bold">
+                            <MessageCircle size="18px" color="#fff" /> Reply
+                          </button>
+                        </div>
+                      </div>
+                      <div className="comment">
+                        <p className="m-0 mt-4 text-body-secondary">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptates quam eligendi asperiores odit
+                          accusamus iusto eveniet esse distinctio quod
+                          exercitationem.
+                        </p>
                       </div>
                     </div>
-                    <div className="reply">
-                      <button className="btn btn-primary py-2 px-3 rounded-pill text-light fw-bold">
-                        <MessageCircle size="18px" color="#fff" /> Reply
-                      </button>
+                    <div className="replyComment mb-4">
+                      <div className="commentInfo d-flex justify-content-between align-items-center">
+                        <div className="profile d-flex">
+                          <img
+                            src="https://shorturl.at/dhEQV"
+                            alt=""
+                            className="d-inline-block rounded-circle me-2"
+                          />
+                          <div className="name">
+                            <h2 className="m-0 text-secondary fw-bold">
+                              Connor Gibson
+                            </h2>
+                            <BlogMeta date="5 Jul 2022" dark={true} />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="comment">
+                        <p className="m-0 mt-4 text-body-secondary">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptates quam eligendi asperiores odit
+                          accusamus iusto eveniet esse distinctio quod
+                          exercitationem.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div className="comment">
-                    <p className="m-0 mt-4 text-body-secondary">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptates quam eligendi asperiores odit accusamus iusto
-                      eveniet esse distinctio quod exercitationem.
-                    </p>
+                  <div className="singleComment mb-4">
+                    <div className="mb-4">
+                      <div className="commentInfo d-flex justify-content-between align-items-center">
+                        <div className="profile d-flex">
+                          <img
+                            src="https://shorturl.at/dhEQV"
+                            alt=""
+                            className="d-inline-block rounded-circle me-2"
+                          />
+                          <div className="name">
+                            <h2 className="m-0 text-secondary fw-bold">
+                              Connor Gibson
+                            </h2>
+                            <BlogMeta date="5 Jul 2022" dark={true} />
+                          </div>
+                        </div>
+                        <div className="reply">
+                          <button className="btn btn-primary py-2 px-3 rounded-pill text-light fw-bold">
+                            <MessageCircle size="18px" color="#fff" /> Reply
+                          </button>
+                        </div>
+                      </div>
+                      <div className="comment">
+                        <p className="m-0 mt-4 text-body-secondary">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptates quam eligendi asperiores odit
+                          accusamus iusto eveniet esse distinctio quod
+                          exercitationem.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="commentForm mt-5">
+                <div className="commentForm mt-3">
                   <div className="row">
                     <div className="col-9">
                       <Formik initialValues={{}} onSubmit={() => {}}>
