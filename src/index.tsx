@@ -34,6 +34,7 @@ import "./styles/global/blogCardLarge.scss";
 import "./styles/global/footer.scss";
 import "./styles/global/navbar.scss";
 import "./styles/global/notFound.scss";
+import "./styles/global/dashbordLayout.scss";
 
 // Form CSS
 import "./styles/form/customForm.scss";
